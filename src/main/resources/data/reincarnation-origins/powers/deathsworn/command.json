@@ -1,0 +1,62 @@
+{
+  "type": "origins:multiple",
+  "command": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:raycast",
+      "distance": 16,
+      "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+          "type": "origins:execute_command",
+          "command": "power grant @s reincarnation-origins:deathsworn/one_off/draw_aggro"
+        }
+      },
+      "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+          "type": "origins:nbt",
+          "nbt": "{Tags:['carn.deathsworn_minion']}",
+          "inverted": true
+        }
+      },
+      "command_along_ray": "particle minecraft:soul_fire_flame",
+      "command_step": 0.25
+    },
+    "cooldown": 100,
+    "hud_render": {
+      "bar_index": 1,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png"
+    }
+  },
+  "onhit": {
+    "condition": {
+      "inverted": true,
+      "type": "origins:nbt",
+      "nbt": "{Tags:['carn.deathsworn_minion']}"
+    },
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "power grant @s reincarnation-origins:deathsworn/one_off/draw_aggro"
+      }
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "whenhit": {
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "power grant @s reincarnation-origins:deathsworn/one_off/draw_aggro"
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  }
+}

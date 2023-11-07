@@ -1,0 +1,8 @@
+{
+	"type":"origins:self_action_on_kill",
+	"entity_action":{
+		"type":"origins:execute_command",
+		"command":"advancement grant @a[tag=carn.deathsworn,distance=..20] only reincarnation-origins:deathsworn/kill"
+	},
+	"cooldown":1
+}

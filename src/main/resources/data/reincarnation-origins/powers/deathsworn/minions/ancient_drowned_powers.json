@@ -1,0 +1,27 @@
+{
+  "type": "origins:multiple",
+  "speed_in_water": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:speed",
+        "duration": 22,
+        "amplifier": 20,
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:in_block_anywhere",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+      },
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

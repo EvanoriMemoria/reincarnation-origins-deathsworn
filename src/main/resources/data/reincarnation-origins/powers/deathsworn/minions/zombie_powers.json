@@ -1,0 +1,47 @@
+{
+  "type": "origins:multiple",
+  "when_hit": {
+    "type": "origins:action_when_hit",
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:actor_condition",
+          "condition": {
+            "inverted": true,
+            "type": "origins:nbt",
+            "nbt": "{Tags:['carn.deathsworn_minion']}"
+          }
+        },
+        {
+          "type": "origins:actor_condition",
+          "condition": {
+            "inverted": true,
+            "type": "origins:nbt",
+            "nbt": "{Tags:['carn.deathsworn']}"
+          }
+        },
+        {
+          "type": "origins:actor_condition",
+          "condition": {
+            "inverted": true,
+            "type": "origins:nbt",
+            "nbt": "{team:'carn.all_summoners_team'}"
+          }
+        }
+      ]
+    },
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "cramming.player",
+      "inverted": true
+    },
+    "bientity_action": {
+      "type": "origins:damage",
+      "amount": 4,
+      "source": {
+        "name": "thorns"
+      }
+    }
+  }
+}

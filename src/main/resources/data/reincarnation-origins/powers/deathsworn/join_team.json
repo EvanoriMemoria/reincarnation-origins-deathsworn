@@ -1,0 +1,33 @@
+{
+  "type": "origins:action_on_callback",
+  "entity_action_chosen": {
+    "type": "origins:execute_command",
+    "command": "function reincarnation-origins:deathsworn/join_team"
+  },
+  "execute_chosen_when_orb": true,
+  "entity_action_lost": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "team leave @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "tag @s remove carn.deathsworn"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "function reincarnation-origins:deathsworn/kill_minions"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "advancement revoke from reincarnation-origins:deathsworn/root"
+      }
+    ]
+  },
+  "entity_action_respawned": {
+    "type": "origins:execute_command",
+    "command": "function reincarnation-origins:deathsworn/kill_minions"
+  }
+}

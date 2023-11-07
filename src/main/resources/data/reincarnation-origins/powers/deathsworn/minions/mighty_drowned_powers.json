@@ -1,0 +1,63 @@
+{
+  "type": "origins:multiple",
+  "speed_in_water": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:speed",
+        "duration": 22,
+        "amplifier": 20,
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:in_block_anywhere",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+      },
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "waterbreathing_aura": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function reincarnation-origins:deathsworn/summons/might_drowned_aura"
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:in_block_anywhere",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+      },
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "onhit": {
+    "type": "origins:action_on_hit",
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "inverted": true,
+        "type": "origins:in_tag",
+        "tag": "carn.deathsworn_minion"
+      }
+    },
+    "bientity_action": {
+      "type": "origins:add_velocity",
+      "z": -2
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "origins:multiple",
+  "cooldown": {
+    "type": "origins:cooldown",
+    "cooldown": 1200,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 3
+    }
+  },
+  "initial_cooldown": {
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+      "type": "origins:trigger_cooldown",
+      "power": "reincarnation-origins:deathsworn/minions/wither_skeleton_powers_cooldown"
+    }
+  },
+  "timer_check": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "function reincarnation-origins:deathsworn/summons/piglin_brute_call"
+        },
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "reincarnation-origins:deathsworn/minions/piglin_brute_powers_cooldown"
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "reincarnation-origins:deathsworn/minions/piglin_brute_powers_cooldown",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "zombification": {
+    "type": "origins:model_color",
+    "green": 0.5,
+    "red": 0.5,
+    "alpha": 0.5
+  }
+}

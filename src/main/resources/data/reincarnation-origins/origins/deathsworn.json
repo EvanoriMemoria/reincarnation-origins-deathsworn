@@ -1,0 +1,26 @@
+{
+  "powers": [
+    "origins:burn_in_daylight",
+    "reincarnation-origins:deathsworn/unsummon",
+    "reincarnation-origins:deathsworn/command",
+    "reincarnation-origins:deathsworn/life_cost_1",
+    "reincarnation-origins:deathsworn/life_cost_2",
+		"reincarnation-origins:deathsworn/life_cost_3",
+    "reincarnation-origins:deathsworn/join_team",
+    "reincarnation-origins:deathsworn/night_lover",
+    "reincarnation-origins:deathsworn/no_melee",
+    "reincarnation-origins:deathsworn/no_trades",
+    "reincarnation-origins:deathsworn/petrified_heart",
+    "reincarnation-origins:deathsworn/small_shot",
+    "reincarnation-origins:deathsworn/soul",
+    "reincarnation-origins:deathsworn/stat_checker",
+    "reincarnation-origins:deathsworn/summon",
+    "reincarnation-origins:deathsworn/take_soul",
+    "reincarnation-origins:deathsworn/recall_minions",
+    "reincarnation-origins:deathsworn/minion_team"
+  ],
+  "icon": "minecraft:nether_wart_block",
+  "impact": 3,
+  "name": "Deathsworn",
+  "description": "You are a necromancer with control over everything belonging in the afterlife."
+}
