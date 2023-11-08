@@ -28,5 +28,28 @@
       "comparison": "==",
       "compare_to": 0
     }
+  },
+  "onhit": {
+    "type": "origins:action_on_hit",
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "inverted": true,
+        "type": "origins:in_tag",
+        "tag": "carn.deathsworn_minion"
+      }
+    },
+    "bientity_action": {
+      "type": "origins:damage",
+      "amount": 10,
+      "source": {
+        "name": "magic",
+        "bypasses_armor": true
+      }
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    }
   }
 }
