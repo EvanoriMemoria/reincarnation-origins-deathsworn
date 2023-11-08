@@ -10,7 +10,6 @@
 		"minecraft:vindicator",
 		"minecraft:zombie",
 		"minecraft:zombified_piglin",
-		"minecraft:guardian",
-		"minecraft:elder_guardian"
+		"minecraft:guardian"
 	]
 }
