@@ -1,5 +1,3 @@
-data modify entity @s ArmorDropChances set value [1.0F,1.0F,1.0F,1.0F]
-data modify entity @s HandDropChances set value [1.0F,1.0F]
 summon minecraft:item ~ ~ ~ {Tags:["Petrified_Heart"],Glowing:1b,PickupDelay:1,Item:{id:"minecraft:heart_of_the_sea",Count:1b,tag:{CustomModelData:1,lnc:1}}}
 
 # Skeleton
