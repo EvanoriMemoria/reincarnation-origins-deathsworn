@@ -1,6 +1,7 @@
 {
 	"origin.reincarnation-origins.deathsworn.description":"You are a necromancer with control over everything belonging in the afterlife.",
 	"origin.reincarnation-origins.deathsworn.name":"Deathsworn",
+
 	"reincarnation-origins.deathsworn.armor":"Armor: ",
 	"reincarnation-origins.deathsworn.attack_damage":"Attack Damage: ",
 	"reincarnation-origins.deathsworn.health":"Health: ",
@@ -23,8 +24,9 @@
 	"reincarnation-origins.deathsworn.piglin_brute_heart":"Ghostly Piglin Brute's Petrified Heart",
 	"reincarnation-origins.deathsworn.wither_skeleton_heart":"Wither Skeleton's Petrified Heart",
 	"reincarnation-origins.deathsworn.stray_heart":"Stray's Petrified Heart",
-	"power.reincarnation-origins.deathsworn/carry.description":"[Shift + Left-Click] a minion to extract it's Petrified Heart, dropping all of it's equipped gear.",
-	"power.reincarnation-origins.deathsworn/carry.name":"Desummon",
+
+	"power.reincarnation-origins.deathsworn/unsummon.description":"[Shift + Left-Click] a minion to extract it's Petrified Heart, dropping all of it's equipped gear.",
+	"power.reincarnation-origins.deathsworn/unsummon.name":"Desummon",
 	"power.reincarnation-origins.deathsworn/command.description":"Single out a mob for all of your minions to target.",
 	"power.reincarnation-origins.deathsworn/command.name":"Execute Order",
 	"power.reincarnation-origins.deathsworn/life_cost_1.description":"Every minion summoned costs you maximum hearts.",
@@ -53,6 +55,7 @@
 	"power.reincarnation-origins.deathsworn/take_soul.name":"Power Siphon",
 	"power.reincarnation-origins.deathsworn/recall_minion.name":"Recall",
 	"power.reincarnation-origins.deathsworn/recall_minion.description":"Recall all of your minions, instantly teleporting them to you.",
+	
 	"reincarnation-origins.advancements.brute.description":"Summon a Piglin Brute in the overworld. Submit! will now deal even more damage.",
 	"reincarnation-origins.advancements.brute.name":"Summon a Piglin Brute",
 	"reincarnation-origins.advancements.immortal.description":"Reclaim your life-force from nearby minions, preventing your death.",
