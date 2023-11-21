@@ -19,8 +19,7 @@
     "reincarnation-origins:deathsworn/summon",
     "reincarnation-origins:deathsworn/take_soul",
     "reincarnation-origins:deathsworn/recall_minions",
-    "reincarnation-origins:deathsworn/minion_team",
-    "reincarnation-origins:deathsworn/minions/zombie_powers"
+    "reincarnation-origins:deathsworn/minion_team"
   ],
   "icon": "minecraft:nether_wart_block",
   "impact": 3,
