@@ -1,10 +1,25 @@
 {
-  "type": "origins:action_when_hit",
-  "bientity_action": {
-    "type": "origins:target_action",
-    "action": {
+  "type": "origins:multiple",
+  "when_hit": {
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "function reincarnation-origins:deathsworn/summons/husk_when_hit"
+      }
+    }
+  },
+  "no_zombie": {
+    "type": "origins:action_over_time",
+    "entity_action": {
       "type": "origins:execute_command",
-      "command": "function reincarnation-origins:deathsworn/summons/husk_when_hit"
+      "command": "function reincarnation-origins:deathsworn/summons/zombie_no_drowned"
+    },
+    "interval": 1,
+    "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water"
     }
   }
 }
